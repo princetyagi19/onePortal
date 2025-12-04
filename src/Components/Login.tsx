@@ -3,7 +3,7 @@ import axios from "axios";
 import { Eye, EyeOff } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import sideImg from "../assets/SideImg.jpeg";
-import "./buttonCss.css"
+import "./buttonCss.css";
 // Types
 interface AuthRequest {
   requesterid: string;
@@ -116,18 +116,11 @@ const Login: React.FC = () => {
               </span>
             </div>
           </div>
-{/* forget pass link  */}
-<h2 className="text-purple-500 text-right">forget password?</h2>
+          {/* forget pass link  */}
+          <h2 className="text-purple-500 text-right">forget password?</h2>
           {/* Submit */}
-          <button
-            type="submit"
-            disabled={loading}
-            className=" button " >
-            {loading
-              ? "Processing..."
-              : isLogin
-              ? "Login"
-              : "SignUp"}
+          <button type="submit" disabled={loading} className=" button ">
+            {loading ? "Processing..." : isLogin ? "Login" : "SignUp"}
           </button>
         </form>
 
@@ -164,9 +157,14 @@ const Login: React.FC = () => {
           alt="Side"
           className="object-cover w-full h-full rounded-l-xl shadow-xl"
         />
-        <h1 className="absolute top-1/3 left-[18%] text-3xl font-bold text-white text-center">
-          WELCOME BACK TO <br/> - ONEPORTAL
-        </h1>
+        <div className="absolute top-1/3 left-[18%] w-fit ">
+          <h1 className="text-3xl font-bold text-white text-center">
+            Hey There -
+          </h1>
+          <h1 className=" text-2xl font-bold text-white text-center">
+            Welcome Back To - ONEPORTAL
+          </h1>
+        </div>
       </div>
     </div>
   );
