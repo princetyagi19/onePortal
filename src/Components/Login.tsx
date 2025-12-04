@@ -70,7 +70,7 @@ const Login: React.FC = () => {
     <div className="min-h-screen flex md:flex-row-reverse flex-col items-center justify-center bg-gray-100">
       {/* Form */}
       <div className="bg-white p-8 shadow-xl rounded-r-xl w-full max-w-md md:mr-4 z-10">
-        <h1 className="text-3xl font-bold text-purple-600">
+        <h1 className="text-3xl font-bold text-purple-900">
           {isLogin ? "Login" : "SignUp"}
         </h1>
         <h3 className="font-semibold text-gray-600 mt-2 mb-6">
@@ -116,12 +116,13 @@ const Login: React.FC = () => {
               </span>
             </div>
           </div>
-
+{/* forget pass link  */}
+<h2 className="text-purple-500 text-right">forget password?</h2>
           {/* Submit */}
           <button
             type="submit"
             disabled={loading}
-            className=" button" >
+            className=" button " >
             {loading
               ? "Processing..."
               : isLogin
@@ -131,7 +132,7 @@ const Login: React.FC = () => {
         </form>
 
         {/* Toggle Login/Signup */}
-        <h2 className="mt-4  text-gray-600">
+        <h2 className="mt-2  text-gray-600">
           {isLogin ? (
             <>
               New user?{" "}
@@ -157,7 +158,7 @@ const Login: React.FC = () => {
       </div>
 
       {/* Side Image */}
-      <div className="md:block hidden relative w-1/3 h-[63vh]">
+      <div className="md:block hidden relative w-1/3 h-[64vh]">
         <img
           src={sideImg}
           alt="Side"

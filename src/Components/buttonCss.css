@@ -3,10 +3,10 @@ button {
   --color: #560bad;
   font-family: inherit;
   display: inline-block;
-  width: 8em;
+  width: 25vw;
   height: 2.6em;
   line-height: 2.5em;
-  margin: 20px;
+  margin: 5px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -24,8 +24,8 @@ button:before {
   position: absolute;
   z-index: -1;
   background: var(--color);
-  height: 150px;
-  width: 200px;
+  height: 170px;
+  width: 800px;
   border-radius: 50%;
 }
 
@@ -40,8 +40,8 @@ button:before {
 }
 
 button:hover:before {
-  top: -30px;
-  left: -30px;
+  top: -50px;
+  left: -50px;
 }
 
 button:active:before {
